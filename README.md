@@ -13,7 +13,7 @@ The subsequent sections will provide information for each group (vine members vs
 The total number of paid reviews is 90.
 
 ### Number of Unpaid Reviews
-![image_name](https://github.com/Mugunthan24/Amazon_Vine_Analysis/blob/main/Images/Number_of_unpaid_Reviews.png)
+![image_name](https://github.com/Mugunthan24/Amazon_Vine_Analysis/blob/main/Images/Number_of_Unpaid_Reviews.png)
 
 The total number of unpaid reviews is 37,831.
 
