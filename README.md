@@ -30,12 +30,12 @@ The total number of unpaid reviews is 14,704.
 ### Percentage of 5-Star Reviews (Paid)
 ![image_name](https://github.com/Mugunthan24/Amazon_Vine_Analysis/blob/main/Images/Percentage_of_Paid_5-Star_Reviews.png)
 
-The percentage of paid 5-star reviews is 48.9%.
+The percentage of paid 5-star reviews is 49%.
 
 ### Percentage of 5-Star Reviews (Unpaid)
 ![image_name](https://github.com/Mugunthan24/Amazon_Vine_Analysis/blob/main/Images/Percentage_of_Unpaid_5-Star_Reviews.png)
 
-The percentage of unpaid 5-star reviews is 38.9%.
+The percentage of unpaid 5-star reviews is 39%.
 
 ## Summary
 The subsequent paragraphs will look at the potential presence of positivity bias and provide a recommendation for additional analysis.

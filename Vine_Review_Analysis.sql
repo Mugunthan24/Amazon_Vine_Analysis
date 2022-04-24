@@ -79,7 +79,15 @@ CREATE TABLE vine_table_number_of_5Stars_unpaid
 
 -- Percentage of 5-star Reviews (Paid)
 SELECT 
-((SELECT COUNT(verified_purchase) AS "Total Number of 5-Star Paid Reviews" FROM vine_table_filtered2
-	   		WHERE star_rating = 5 AND verified_purchase = 'Y') /
-(SELECT COUNT(verified_purchase) AS "Total Number of Paid Reviews" FROM vine_table_filtered2
-	   		WHERE verified_purchase = 'Y')) AS "Percentage of 5 Star Reviews (Paid)"
+Round(((SELECT COUNT(vine) AS "Total Number of 5-Star Paid Reviews" FROM vine_table_filtered2
+	   		WHERE star_rating = 5 AND vine = 'Y')::DECIMAL /
+(SELECT COUNT(vine) AS "Total Number of Paid Reviews" FROM vine_table_filtered2
+	   		WHERE vine = 'Y')::DECIMAL), 2) * 100 AS "Percentage of 5 Star Reviews (Paid)"
+
+
+-- Percentage of 5-star Reviews (Unpaid)
+SELECT 
+((SELECT COUNT(vine) AS "Total Number of 5-Star Paid Reviews" FROM vine_table_filtered2
+	   		WHERE star_rating = 5 AND vine = 'N')::DECIMAL /
+(SELECT COUNT(vine) AS "Total Number of Paid Reviews" FROM vine_table_filtered2
+	   		WHERE vine = 'N')::DECIMAL) AS "Percentage of 5 Star Reviews (Unpaid)"
